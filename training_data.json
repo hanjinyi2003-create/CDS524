@@ -1,0 +1,902 @@
+[
+  {
+    "episode": 100,
+    "avg_score": 5.2,
+    "max_score": 22,
+    "min_score": 0,
+    "avg_reward": 517.54,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.046903133392333984
+  },
+  {
+    "episode": 200,
+    "avg_score": 9.69,
+    "max_score": 25,
+    "min_score": 0,
+    "avg_reward": 1008.66,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.12387585639953613
+  },
+  {
+    "episode": 300,
+    "avg_score": 10.22,
+    "max_score": 34,
+    "min_score": 1,
+    "avg_reward": 1069.53,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.2076094150543213
+  },
+  {
+    "episode": 400,
+    "avg_score": 12.01,
+    "max_score": 30,
+    "min_score": 0,
+    "avg_reward": 1261.98,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.30109429359436035
+  },
+  {
+    "episode": 500,
+    "avg_score": 11.59,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 1219.94,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.3894519805908203
+  },
+  {
+    "episode": 600,
+    "avg_score": 11.58,
+    "max_score": 33,
+    "min_score": 0,
+    "avg_reward": 1216.24,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.4773552417755127
+  },
+  {
+    "episode": 700,
+    "avg_score": 10.72,
+    "max_score": 34,
+    "min_score": 0,
+    "avg_reward": 1125.31,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.5652647018432617
+  },
+  {
+    "episode": 800,
+    "avg_score": 9.16,
+    "max_score": 37,
+    "min_score": 0,
+    "avg_reward": 951.63,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.6496782302856445
+  },
+  {
+    "episode": 900,
+    "avg_score": 8.66,
+    "max_score": 31,
+    "min_score": 0,
+    "avg_reward": 892.02,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.7364411354064941
+  },
+  {
+    "episode": 1000,
+    "avg_score": 11.31,
+    "max_score": 26,
+    "min_score": 1,
+    "avg_reward": 1189.17,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.822789192199707
+  },
+  {
+    "episode": 1100,
+    "avg_score": 12.78,
+    "max_score": 35,
+    "min_score": 0,
+    "avg_reward": 1349.96,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 0.919069766998291
+  },
+  {
+    "episode": 1200,
+    "avg_score": 12.86,
+    "max_score": 38,
+    "min_score": 0,
+    "avg_reward": 1355.95,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.0188345909118652
+  },
+  {
+    "episode": 1300,
+    "avg_score": 11.85,
+    "max_score": 45,
+    "min_score": 1,
+    "avg_reward": 1247.64,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.1342744827270508
+  },
+  {
+    "episode": 1400,
+    "avg_score": 11.33,
+    "max_score": 33,
+    "min_score": 0,
+    "avg_reward": 1189.86,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.2258493900299072
+  },
+  {
+    "episode": 1500,
+    "avg_score": 8.91,
+    "max_score": 26,
+    "min_score": 0,
+    "avg_reward": 924.76,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.3064451217651367
+  },
+  {
+    "episode": 1600,
+    "avg_score": 11.34,
+    "max_score": 33,
+    "min_score": 0,
+    "avg_reward": 1189.02,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.3913464546203613
+  },
+  {
+    "episode": 1700,
+    "avg_score": 10.38,
+    "max_score": 28,
+    "min_score": 1,
+    "avg_reward": 1087.39,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.4707999229431152
+  },
+  {
+    "episode": 1800,
+    "avg_score": 11.22,
+    "max_score": 34,
+    "min_score": 0,
+    "avg_reward": 1179.66,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.5563421249389648
+  },
+  {
+    "episode": 1900,
+    "avg_score": 9.73,
+    "max_score": 28,
+    "min_score": 0,
+    "avg_reward": 1016.26,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.6324758529663086
+  },
+  {
+    "episode": 2000,
+    "avg_score": 9.49,
+    "max_score": 31,
+    "min_score": 0,
+    "avg_reward": 989.91,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.7113983631134033
+  },
+  {
+    "episode": 2100,
+    "avg_score": 12.14,
+    "max_score": 37,
+    "min_score": 0,
+    "avg_reward": 1278.55,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.800912618637085
+  },
+  {
+    "episode": 2200,
+    "avg_score": 10.2,
+    "max_score": 33,
+    "min_score": 0,
+    "avg_reward": 1067.71,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.8803396224975586
+  },
+  {
+    "episode": 2300,
+    "avg_score": 11.69,
+    "max_score": 31,
+    "min_score": 0,
+    "avg_reward": 1229.97,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 1.9797983169555664
+  },
+  {
+    "episode": 2400,
+    "avg_score": 11.2,
+    "max_score": 39,
+    "min_score": 1,
+    "avg_reward": 1174.3,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.076329231262207
+  },
+  {
+    "episode": 2500,
+    "avg_score": 10.57,
+    "max_score": 33,
+    "min_score": 0,
+    "avg_reward": 1103.99,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.1678764820098877
+  },
+  {
+    "episode": 2600,
+    "avg_score": 11.2,
+    "max_score": 34,
+    "min_score": 0,
+    "avg_reward": 1174.89,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.259655237197876
+  },
+  {
+    "episode": 2700,
+    "avg_score": 10.94,
+    "max_score": 37,
+    "min_score": 0,
+    "avg_reward": 1145.34,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.347681760787964
+  },
+  {
+    "episode": 2800,
+    "avg_score": 13.36,
+    "max_score": 30,
+    "min_score": 0,
+    "avg_reward": 1411.12,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.453360080718994
+  },
+  {
+    "episode": 2900,
+    "avg_score": 12.43,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 1310.78,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.550847291946411
+  },
+  {
+    "episode": 3000,
+    "avg_score": 9.37,
+    "max_score": 30,
+    "min_score": 0,
+    "avg_reward": 977.22,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.632307529449463
+  },
+  {
+    "episode": 3100,
+    "avg_score": 13.2,
+    "max_score": 38,
+    "min_score": 0,
+    "avg_reward": 1393.35,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.7363500595092773
+  },
+  {
+    "episode": 3200,
+    "avg_score": 10.36,
+    "max_score": 30,
+    "min_score": 0,
+    "avg_reward": 1082.48,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.8290820121765137
+  },
+  {
+    "episode": 3300,
+    "avg_score": 10.21,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 1069.02,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 2.9144771099090576
+  },
+  {
+    "episode": 3400,
+    "avg_score": 11.1,
+    "max_score": 32,
+    "min_score": 1,
+    "avg_reward": 1164.1,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.0007896423339844
+  },
+  {
+    "episode": 3500,
+    "avg_score": 8.21,
+    "max_score": 22,
+    "min_score": 0,
+    "avg_reward": 847.51,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.0713694095611572
+  },
+  {
+    "episode": 3600,
+    "avg_score": 9.53,
+    "max_score": 26,
+    "min_score": 0,
+    "avg_reward": 989.29,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.1518678665161133
+  },
+  {
+    "episode": 3700,
+    "avg_score": 11.12,
+    "max_score": 31,
+    "min_score": 0,
+    "avg_reward": 1168.83,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.241412401199341
+  },
+  {
+    "episode": 3800,
+    "avg_score": 9.92,
+    "max_score": 31,
+    "min_score": 0,
+    "avg_reward": 1037.94,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.323972225189209
+  },
+  {
+    "episode": 3900,
+    "avg_score": 10.31,
+    "max_score": 33,
+    "min_score": 1,
+    "avg_reward": 1077.59,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.4103901386260986
+  },
+  {
+    "episode": 4000,
+    "avg_score": 12.62,
+    "max_score": 41,
+    "min_score": 0,
+    "avg_reward": 1332.74,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.50347638130188
+  },
+  {
+    "episode": 4100,
+    "avg_score": 11.36,
+    "max_score": 35,
+    "min_score": 0,
+    "avg_reward": 1191.77,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.592388868331909
+  },
+  {
+    "episode": 4200,
+    "avg_score": 9.36,
+    "max_score": 35,
+    "min_score": 0,
+    "avg_reward": 972.37,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.6767685413360596
+  },
+  {
+    "episode": 4300,
+    "avg_score": 10.61,
+    "max_score": 43,
+    "min_score": 0,
+    "avg_reward": 1112.4,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.7568836212158203
+  },
+  {
+    "episode": 4400,
+    "avg_score": 13.49,
+    "max_score": 39,
+    "min_score": 0,
+    "avg_reward": 1421.56,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.8558857440948486
+  },
+  {
+    "episode": 4500,
+    "avg_score": 12.49,
+    "max_score": 42,
+    "min_score": 1,
+    "avg_reward": 1316.32,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 3.9623684883117676
+  },
+  {
+    "episode": 4600,
+    "avg_score": 12.44,
+    "max_score": 42,
+    "min_score": 0,
+    "avg_reward": 1308.9,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.056899070739746
+  },
+  {
+    "episode": 4700,
+    "avg_score": 9.9,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 1034.38,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.138437271118164
+  },
+  {
+    "episode": 4800,
+    "avg_score": 12.12,
+    "max_score": 33,
+    "min_score": 0,
+    "avg_reward": 1273.87,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.253868579864502
+  },
+  {
+    "episode": 4900,
+    "avg_score": 10.65,
+    "max_score": 33,
+    "min_score": 0,
+    "avg_reward": 1114.49,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.336445093154907
+  },
+  {
+    "episode": 5000,
+    "avg_score": 11.76,
+    "max_score": 34,
+    "min_score": 0,
+    "avg_reward": 1235.86,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.428799867630005
+  },
+  {
+    "episode": 5100,
+    "avg_score": 11.9,
+    "max_score": 37,
+    "min_score": 0,
+    "avg_reward": 1251.04,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.52152943611145
+  },
+  {
+    "episode": 5200,
+    "avg_score": 11.05,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 1158.69,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.6116344928741455
+  },
+  {
+    "episode": 5300,
+    "avg_score": 10.21,
+    "max_score": 41,
+    "min_score": 0,
+    "avg_reward": 1069.02,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.690442085266113
+  },
+  {
+    "episode": 5400,
+    "avg_score": 12.09,
+    "max_score": 30,
+    "min_score": 0,
+    "avg_reward": 1272.35,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.783412933349609
+  },
+  {
+    "episode": 5500,
+    "avg_score": 10.43,
+    "max_score": 28,
+    "min_score": 0,
+    "avg_reward": 1090.74,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.8723790645599365
+  },
+  {
+    "episode": 5600,
+    "avg_score": 8.56,
+    "max_score": 27,
+    "min_score": 0,
+    "avg_reward": 884.48,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 4.946855306625366
+  },
+  {
+    "episode": 5700,
+    "avg_score": 6.85,
+    "max_score": 24,
+    "min_score": 0,
+    "avg_reward": 697.49,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.027896404266357
+  },
+  {
+    "episode": 5800,
+    "avg_score": 10.12,
+    "max_score": 34,
+    "min_score": 0,
+    "avg_reward": 1056.92,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.117133140563965
+  },
+  {
+    "episode": 5900,
+    "avg_score": 10.29,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 1076.82,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.202160596847534
+  },
+  {
+    "episode": 6000,
+    "avg_score": 10.55,
+    "max_score": 34,
+    "min_score": 1,
+    "avg_reward": 1099.76,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.284155368804932
+  },
+  {
+    "episode": 6100,
+    "avg_score": 11.49,
+    "max_score": 35,
+    "min_score": 0,
+    "avg_reward": 1206.81,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.375687122344971
+  },
+  {
+    "episode": 6200,
+    "avg_score": 10.21,
+    "max_score": 29,
+    "min_score": 0,
+    "avg_reward": 1064.05,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.480118989944458
+  },
+  {
+    "episode": 6300,
+    "avg_score": 10.1,
+    "max_score": 28,
+    "min_score": 0,
+    "avg_reward": 1052.37,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.56347918510437
+  },
+  {
+    "episode": 6400,
+    "avg_score": 8.71,
+    "max_score": 25,
+    "min_score": 0,
+    "avg_reward": 898.22,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.631645441055298
+  },
+  {
+    "episode": 6500,
+    "avg_score": 11.22,
+    "max_score": 34,
+    "min_score": 0,
+    "avg_reward": 1178.5,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.723458528518677
+  },
+  {
+    "episode": 6600,
+    "avg_score": 12.04,
+    "max_score": 36,
+    "min_score": 0,
+    "avg_reward": 1268.51,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.829788684844971
+  },
+  {
+    "episode": 6700,
+    "avg_score": 11.61,
+    "max_score": 30,
+    "min_score": 0,
+    "avg_reward": 1224.38,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 5.921419143676758
+  },
+  {
+    "episode": 6800,
+    "avg_score": 10.0,
+    "max_score": 28,
+    "min_score": 0,
+    "avg_reward": 1041.67,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.003591060638428
+  },
+  {
+    "episode": 6900,
+    "avg_score": 13.04,
+    "max_score": 34,
+    "min_score": 0,
+    "avg_reward": 1376.08,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.109314203262329
+  },
+  {
+    "episode": 7000,
+    "avg_score": 11.64,
+    "max_score": 41,
+    "min_score": 0,
+    "avg_reward": 1223.06,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.203324317932129
+  },
+  {
+    "episode": 7100,
+    "avg_score": 10.3,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 1075.61,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.29777455329895
+  },
+  {
+    "episode": 7200,
+    "avg_score": 10.69,
+    "max_score": 40,
+    "min_score": 1,
+    "avg_reward": 1117.73,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.382092237472534
+  },
+  {
+    "episode": 7300,
+    "avg_score": 11.34,
+    "max_score": 33,
+    "min_score": 0,
+    "avg_reward": 1188.14,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.46922492980957
+  },
+  {
+    "episode": 7400,
+    "avg_score": 11.86,
+    "max_score": 39,
+    "min_score": 0,
+    "avg_reward": 1244.06,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.558855295181274
+  },
+  {
+    "episode": 7500,
+    "avg_score": 12.09,
+    "max_score": 36,
+    "min_score": 0,
+    "avg_reward": 1275.13,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.654229402542114
+  },
+  {
+    "episode": 7600,
+    "avg_score": 11.69,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 1229.18,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.748124599456787
+  },
+  {
+    "episode": 7700,
+    "avg_score": 11.95,
+    "max_score": 28,
+    "min_score": 0,
+    "avg_reward": 1257.83,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.841688632965088
+  },
+  {
+    "episode": 7800,
+    "avg_score": 11.05,
+    "max_score": 35,
+    "min_score": 0,
+    "avg_reward": 1160.01,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 6.939220905303955
+  },
+  {
+    "episode": 7900,
+    "avg_score": 9.82,
+    "max_score": 28,
+    "min_score": 0,
+    "avg_reward": 1022.91,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.0183117389678955
+  },
+  {
+    "episode": 8000,
+    "avg_score": 11.67,
+    "max_score": 28,
+    "min_score": 1,
+    "avg_reward": 1224.94,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.108918190002441
+  },
+  {
+    "episode": 8100,
+    "avg_score": 12.17,
+    "max_score": 34,
+    "min_score": 0,
+    "avg_reward": 1281.96,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.2151758670806885
+  },
+  {
+    "episode": 8200,
+    "avg_score": 9.09,
+    "max_score": 31,
+    "min_score": 0,
+    "avg_reward": 941.01,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.306643009185791
+  },
+  {
+    "episode": 8300,
+    "avg_score": 10.59,
+    "max_score": 35,
+    "min_score": 0,
+    "avg_reward": 1106.64,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.39238977432251
+  },
+  {
+    "episode": 8400,
+    "avg_score": 11.35,
+    "max_score": 28,
+    "min_score": 0,
+    "avg_reward": 1193.25,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.487346649169922
+  },
+  {
+    "episode": 8500,
+    "avg_score": 11.1,
+    "max_score": 38,
+    "min_score": 0,
+    "avg_reward": 1163.55,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.5743653774261475
+  },
+  {
+    "episode": 8600,
+    "avg_score": 13.87,
+    "max_score": 41,
+    "min_score": 0,
+    "avg_reward": 1471.11,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.679342269897461
+  },
+  {
+    "episode": 8700,
+    "avg_score": 10.81,
+    "max_score": 25,
+    "min_score": 0,
+    "avg_reward": 1132.17,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.75792670249939
+  },
+  {
+    "episode": 8800,
+    "avg_score": 13.36,
+    "max_score": 38,
+    "min_score": 0,
+    "avg_reward": 1410.83,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.859740257263184
+  },
+  {
+    "episode": 8900,
+    "avg_score": 11.94,
+    "max_score": 35,
+    "min_score": 1,
+    "avg_reward": 1254.62,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 7.947427034378052
+  },
+  {
+    "episode": 9000,
+    "avg_score": 10.69,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 1118.77,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.035776138305664
+  },
+  {
+    "episode": 9100,
+    "avg_score": 10.47,
+    "max_score": 25,
+    "min_score": 0,
+    "avg_reward": 1094.17,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.116384744644165
+  },
+  {
+    "episode": 9200,
+    "avg_score": 12.22,
+    "max_score": 44,
+    "min_score": 0,
+    "avg_reward": 1288.02,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.214831113815308
+  },
+  {
+    "episode": 9300,
+    "avg_score": 11.27,
+    "max_score": 32,
+    "min_score": 1,
+    "avg_reward": 1184.34,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.303281784057617
+  },
+  {
+    "episode": 9400,
+    "avg_score": 12.3,
+    "max_score": 34,
+    "min_score": 1,
+    "avg_reward": 1299.26,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.39443302154541
+  },
+  {
+    "episode": 9500,
+    "avg_score": 10.21,
+    "max_score": 28,
+    "min_score": 1,
+    "avg_reward": 1064.8,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.47738265991211
+  },
+  {
+    "episode": 9600,
+    "avg_score": 10.35,
+    "max_score": 30,
+    "min_score": 1,
+    "avg_reward": 1081.7,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.564323663711548
+  },
+  {
+    "episode": 9700,
+    "avg_score": 9.05,
+    "max_score": 32,
+    "min_score": 0,
+    "avg_reward": 937.47,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.646513223648071
+  },
+  {
+    "episode": 9800,
+    "avg_score": 10.15,
+    "max_score": 35,
+    "min_score": 1,
+    "avg_reward": 1056.73,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.729796648025513
+  },
+  {
+    "episode": 9900,
+    "avg_score": 11.92,
+    "max_score": 34,
+    "min_score": 1,
+    "avg_reward": 1256.37,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.819731712341309
+  },
+  {
+    "episode": 10000,
+    "avg_score": 11.21,
+    "max_score": 40,
+    "min_score": 0,
+    "avg_reward": 1178.43,
+    "epsilon": 0.0499963148444771,
+    "elapsed_time": 8.914557456970215
+  }
+]
