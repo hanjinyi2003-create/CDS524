@@ -22,6 +22,14 @@ RED = (255, 0, 0)          # 食物颜色
 GREEN = (0, 255, 0)        # 蛇身颜色
 BLUE = (0, 0, 255)         # 蛇头颜色
 GRAY = (128, 128, 128)     # 边界颜色
+YELLOW = (255, 255, 0)     # 按钮高亮
+ORANGE = (255, 165, 0)     # 按钮颜色
+PURPLE = (128, 0, 128)     # 标题颜色
+
+# 游戏状态
+GAME_START = 0
+GAME_PLAYING = 1
+GAME_OVER = 2
 
 # Q-learning参数（优化后，加快收敛）
 ALPHA = 0.2    # 提高学习率，加快Q值更新
@@ -37,8 +45,9 @@ class SnakeGame:
     def __init__(self):
         # 创建游戏窗口
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
-        pygame.display.set_caption("Q-learning贪吃蛇（缩小状态空间）")
+        pygame.display.set_caption("Q-Learning Snake")
         self.clock = pygame.time.Clock()
+        self.game_state = GAME_START
         self.reset()
 
     def reset(self):
@@ -178,33 +187,103 @@ class SnakeGame:
         self.total_reward += reward
         return self._get_state(), reward, self.game_over, self.score
 
-    def render(self):
-        """绘制游戏界面"""
+    def draw_start_screen(self):
+        """绘制开始游戏界面"""
         self.screen.fill(BLACK)
         
-        # 绘制边界
-        pygame.draw.rect(self.screen, GRAY, (0, 0, WIDTH, BLOCK_SIZE))
-        pygame.draw.rect(self.screen, GRAY, (0, HEIGHT - BLOCK_SIZE, WIDTH, BLOCK_SIZE))
-        pygame.draw.rect(self.screen, GRAY, (0, 0, BLOCK_SIZE, HEIGHT))
-        pygame.draw.rect(self.screen, GRAY, (WIDTH - BLOCK_SIZE, 0, BLOCK_SIZE, HEIGHT))
+        # 标题
+        font_large = pygame.font.SysFont('Arial', 40, bold=True)
+        title_text = font_large.render("Q-Learning Snake", True, PURPLE)
+        title_rect = title_text.get_rect(center=(WIDTH//2, HEIGHT//3))
+        self.screen.blit(title_text, title_rect)
         
-        # 绘制食物
-        pygame.draw.rect(self.screen, RED, (self.food[0], self.food[1], BLOCK_SIZE, BLOCK_SIZE))
+        # 副标题
+        font_medium = pygame.font.SysFont('Arial', 20)
+        subtitle_text = font_medium.render("Press SPACE to start", True, WHITE)
+        subtitle_rect = subtitle_text.get_rect(center=(WIDTH//2, HEIGHT//2))
+        self.screen.blit(subtitle_text, subtitle_rect)
         
-        # 绘制蛇
-        for i, (x, y) in enumerate(self.snake):
-            color = BLUE if i == 0 else GREEN
+        # 提示信息
+        info_text = font_medium.render("Trained for 10000 episodes", True, GRAY)
+        info_rect = info_text.get_rect(center=(WIDTH//2, HEIGHT//2 + 40))
+        self.screen.blit(info_text, info_rect)
+        
+        # 绘制蛇的预览
+        for i in range(3):
+            x = WIDTH//2 - BLOCK_SIZE * 2 + i * BLOCK_SIZE
+            y = HEIGHT//3 + 60
+            color = BLUE if i == 2 else GREEN
             pygame.draw.rect(self.screen, color, (x, y, BLOCK_SIZE, BLOCK_SIZE))
         
-        # 绘制分数和奖励
-        font = pygame.font.SysFont(None, 24)  # 缩小字体，适配小窗口
-        score_text = font.render(f"Score: {self.score}", True, WHITE)
-        reward_text = font.render(f"Reward: {self.total_reward:.1f}", True, WHITE)
-        self.screen.blit(score_text, (10, 10))
-        self.screen.blit(reward_text, (10, 40))
+        # 绘制食物预览
+        food_x = WIDTH//2 + BLOCK_SIZE * 2
+        food_y = HEIGHT//3 + 60
+        pygame.draw.rect(self.screen, RED, (food_x, food_y, BLOCK_SIZE, BLOCK_SIZE))
         
         pygame.display.flip()
         self.clock.tick(FPS)
+    
+    def draw_game_over_screen(self):
+        """绘制游戏结束界面"""
+        self.screen.fill(BLACK)
+        
+        # 标题
+        font_large = pygame.font.SysFont('Arial', 40, bold=True)
+        game_over_text = font_large.render("Game Over", True, RED)
+        game_over_rect = game_over_text.get_rect(center=(WIDTH//2, HEIGHT//3))
+        self.screen.blit(game_over_text, game_over_rect)
+        
+        # 分数
+        font_medium = pygame.font.SysFont('Arial', 24)
+        score_text = font_medium.render(f"Final Score: {self.score}", True, WHITE)
+        score_rect = score_text.get_rect(center=(WIDTH//2, HEIGHT//2))
+        self.screen.blit(score_text, score_rect)
+        
+        # 奖励
+        reward_text = font_medium.render(f"Total Reward: {self.total_reward:.1f}", True, WHITE)
+        reward_rect = reward_text.get_rect(center=(WIDTH//2, HEIGHT//2 + 40))
+        self.screen.blit(reward_text, reward_rect)
+        
+        # 提示信息
+        hint_text = font_medium.render("Press SPACE to restart", True, YELLOW)
+        hint_rect = hint_text.get_rect(center=(WIDTH//2, HEIGHT//2 + 80))
+        self.screen.blit(hint_text, hint_rect)
+        
+        pygame.display.flip()
+        self.clock.tick(FPS)
+    
+    def render(self):
+        """绘制游戏界面"""
+        if self.game_state == GAME_START:
+            self.draw_start_screen()
+        elif self.game_state == GAME_OVER:
+            self.draw_game_over_screen()
+        else:  # GAME_PLAYING
+            self.screen.fill(BLACK)
+            
+            # 绘制边界
+            pygame.draw.rect(self.screen, GRAY, (0, 0, WIDTH, BLOCK_SIZE))
+            pygame.draw.rect(self.screen, GRAY, (0, HEIGHT - BLOCK_SIZE, WIDTH, BLOCK_SIZE))
+            pygame.draw.rect(self.screen, GRAY, (0, 0, BLOCK_SIZE, HEIGHT))
+            pygame.draw.rect(self.screen, GRAY, (WIDTH - BLOCK_SIZE, 0, BLOCK_SIZE, HEIGHT))
+            
+            # 绘制食物
+            pygame.draw.rect(self.screen, RED, (self.food[0], self.food[1], BLOCK_SIZE, BLOCK_SIZE))
+            
+            # 绘制蛇
+            for i, (x, y) in enumerate(self.snake):
+                color = BLUE if i == 0 else GREEN
+                pygame.draw.rect(self.screen, color, (x, y, BLOCK_SIZE, BLOCK_SIZE))
+            
+            # 绘制分数和奖励
+            font = pygame.font.SysFont(None, 24)  # 缩小字体，适配小窗口
+            score_text = font.render(f"Score: {self.score}", True, WHITE)
+            reward_text = font.render(f"Reward: {self.total_reward:.1f}", True, WHITE)
+            self.screen.blit(score_text, (10, 10))
+            self.screen.blit(reward_text, (10, 40))
+            
+            pygame.display.flip()
+            self.clock.tick(FPS)
 
 class QLearningAgent:
     def __init__(self):
@@ -273,6 +352,8 @@ def train_agent(episodes=10000):
             agent.learn(state, action, reward, next_state, done)
             state = next_state
             total_reward += reward
+            
+            # 训练时不渲染，加快训练速度
         
         episode_time = time.time() - episode_start
         scores.append(score)
@@ -352,18 +433,30 @@ def demo_agent(agent):
     """演示训练好的智能体"""
     game = SnakeGame()
     agent.epsilon = 0.0  # 关闭探索，只使用最优策略
-    state = game.reset()
-    done = False
     
-    while not done:
+    while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 return
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    if game.game_state == GAME_START:
+                        game.game_state = GAME_PLAYING
+                        state = game.reset()
+                        done = False
+                    elif game.game_state == GAME_OVER:
+                        game.game_state = GAME_PLAYING
+                        state = game.reset()
+                        done = False
         
-        action = agent.choose_action(state)
-        next_state, _, done, _ = game.step(action)
-        state = next_state
+        if game.game_state == GAME_PLAYING and not done:
+            action = agent.choose_action(state)
+            next_state, _, done, _ = game.step(action)
+            state = next_state
+            if done:
+                game.game_state = GAME_OVER
+        
         game.render()
 
 if __name__ == "__main__":
